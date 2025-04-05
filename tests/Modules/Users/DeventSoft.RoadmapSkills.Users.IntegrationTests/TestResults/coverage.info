@@ -1,0 +1,49 @@
+SF:/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/DeventSoft.RoadmapSkills.Api/Program.cs
+FN:0,System.Void Program::<Main>$(System.String[])
+FNDA:0,System.Void Program::<Main>$(System.String[])
+DA:1,0
+DA:5,0
+DA:6,0
+DA:8,0
+DA:11,0
+DA:12,0
+DA:13,0
+DA:14,0
+DA:15,0
+DA:17,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:39,0
+BRDA:11,58,0,0
+BRDA:11,58,1,0
+BRDA:26,15,0,0
+BRDA:26,15,1,0
+FN:40,System.DateOnly WeatherForecast::get_Date()
+FNDA:0,System.DateOnly WeatherForecast::get_Date()
+DA:41,0
+FN:42,System.Int32 WeatherForecast::get_TemperatureF()
+FNDA:0,System.Int32 WeatherForecast::get_TemperatureF()
+DA:43,0
+LF:31
+LH:0
+BRF:4
+BRH:0
+FNF:3
+FNH:0
+end_of_record
