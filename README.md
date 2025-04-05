@@ -27,6 +27,13 @@ tests/
 
 ## Latest Changes
 
+### API and Infrastructure Improvements (2024-04-05)
+- Configured FastEndpoints for efficient API endpoint handling
+- Added Swagger UI with proper documentation
+- Implemented JWT Bearer authentication
+- Updated infrastructure with proper dependency injection
+- Cleaned up build output files and improved repository structure
+
 ### Users Module Implementation (2024-03-21)
 - Implemented User entity and repository
 - Added UserService with CRUD operations
@@ -73,8 +80,13 @@ dotnet test
 
 5. Run the API project
 ```bash
-cd src/DeventSoft.RoadmapSkills.Api
+cd src/Modules/Users/DeventSoft.RoadmapSkills.Users.Api
 dotnet run
+```
+
+6. Access Swagger UI
+```
+http://localhost:5001/swagger
 ```
 
 ## Features
@@ -84,6 +96,8 @@ dotnet run
 - Record completed skills and certifications
 - Generate progress reports
 - Share progress with mentors or team leads
+- RESTful API with Swagger documentation
+- JWT Bearer authentication
 
 ## Architecture
 
@@ -92,12 +106,15 @@ This project follows Clean Architecture principles:
 - Domain Layer: Contains enterprise logic and types
 - Application Layer: Contains business logic and interfaces
 - Infrastructure Layer: Contains implementation details and external concerns
-- API Layer: Contains API controllers and models
+- API Layer: Contains API endpoints using FastEndpoints
 
 ## Technologies Used
 
 - .NET 8.0 (LTS)
 - Entity Framework Core
+- FastEndpoints for API endpoints
+- Swagger/OpenAPI for documentation
+- JWT Bearer for authentication
 - xUnit for testing
 - NSubstitute for mocking
 - Coverlet for code coverage
