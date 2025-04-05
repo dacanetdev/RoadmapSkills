@@ -1,6 +1,33 @@
 @DeventSoft.RoadmapSkills.Api_HostAddress = http://localhost:5002
 
-GET {{DeventSoft.RoadmapSkills.Api_HostAddress}}/weatherforecast/
+### Get all users
+GET {{DeventSoft.RoadmapSkills.Api_HostAddress}}/api/users
 Accept: application/json
 
-###
+### Get user by ID
+GET {{DeventSoft.RoadmapSkills.Api_HostAddress}}/api/users/00000000-0000-0000-0000-000000000000
+Accept: application/json
+
+### Create user
+POST {{DeventSoft.RoadmapSkills.Api_HostAddress}}/api/users
+Content-Type: application/json
+
+{
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "john.doe@example.com"
+}
+
+### Update user
+PUT {{DeventSoft.RoadmapSkills.Api_HostAddress}}/api/users/00000000-0000-0000-0000-000000000000
+Content-Type: application/json
+
+{
+    "id": "00000000-0000-0000-0000-000000000000",
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "john.doe@example.com"
+}
+
+### Delete user
+DELETE {{DeventSoft.RoadmapSkills.Api_HostAddress}}/api/users/00000000-0000-0000-0000-000000000000

@@ -1,6 +1,6 @@
 using FastEndpoints;
 using DeventSoft.RoadmapSkills.Users.Domain.Repositories;
-using DeventSoft.RoadmapSkills.Shared.Infrastructure.Common;
+using DeventSoft.RoadmapSkills.Shared.Domain.Common;
 using FluentValidation;
 using Mapster;
 
@@ -61,11 +61,11 @@ public class UpdateUserEndpoint : Endpoint<UpdateUserRequest, UpdateUserResponse
     public override void Configure()
     {
         Put("/api/users/{id}");
-        Description(d => d
-            .WithName("UpdateUser")
-            .WithTags("Users")
-            .WithSummary("Updates a user")
-            .WithDescription("Updates a user's information"));
+        Summary(s => {
+            s.Summary = "Updates a user";
+            s.Description = "Updates a user's information";
+        });
+        Tags("Users");
     }
 
     public override async Task HandleAsync(UpdateUserRequest req, CancellationToken ct)

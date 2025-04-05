@@ -1,4 +1,4 @@
-using DeventSoft.RoadmapSkills.Users.Domain.Common;
+using DeventSoft.RoadmapSkills.Shared.Domain.Common;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 

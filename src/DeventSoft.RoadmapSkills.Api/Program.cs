@@ -42,6 +42,9 @@ builder.Services.AddRoadmapSkills(builder.Configuration);
 
 var app = builder.Build();
 
+// Apply database migrations
+await app.Services.MigrateRoadmapSkillsDatabasesAsync();
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -117,8 +120,3 @@ users.MapDelete("/{id}", async (Guid id, IUserService userService) =>
     .Produces(404);
 
 app.Run();
-
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}

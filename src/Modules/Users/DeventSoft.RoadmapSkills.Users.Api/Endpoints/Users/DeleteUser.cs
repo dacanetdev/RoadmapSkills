@@ -1,6 +1,6 @@
 using FastEndpoints;
 using DeventSoft.RoadmapSkills.Users.Domain.Repositories;
-using DeventSoft.RoadmapSkills.Shared.Infrastructure.Common;
+using DeventSoft.RoadmapSkills.Shared.Domain.Common;
 
 namespace DeventSoft.RoadmapSkills.Users.Api.Endpoints.Users;
 
@@ -18,11 +18,11 @@ public class DeleteUserEndpoint : EndpointWithoutRequest
     public override void Configure()
     {
         Delete("/api/users/{id}");
-        Description(d => d
-            .WithName("DeleteUser")
-            .WithTags("Users")
-            .WithSummary("Deletes a user")
-            .WithDescription("Soft deletes a user by their ID"));
+        Summary(s => {
+            s.Summary = "Deletes a user";
+            s.Description = "Soft deletes a user by their ID";
+        });
+        Tags("Users");
     }
 
     public override async Task HandleAsync(CancellationToken ct)
@@ -36,7 +36,7 @@ public class DeleteUserEndpoint : EndpointWithoutRequest
             return;
         }
 
-        await _userRepository.DeleteAsync(id);
+        await _userRepository.DeleteAsync(user);
         await _unitOfWork.SaveChangesAsync(ct);
 
         await SendNoContentAsync(ct);
