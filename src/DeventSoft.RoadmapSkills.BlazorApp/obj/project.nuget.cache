@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "ikIk2ocYuOU=",
+  "success": true,
+  "projectFilePath": "/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/DeventSoft.RoadmapSkills.BlazorApp/DeventSoft.RoadmapSkills.BlazorApp.csproj",
+  "expectedPackageFiles": [
+    "/Users/dacanetdev/.nuget/packages/microsoft.netcore.app.ref/8.0.13/microsoft.netcore.app.ref.8.0.13.nupkg.sha512",
+    "/Users/dacanetdev/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.13/microsoft.aspnetcore.app.ref.8.0.13.nupkg.sha512",
+    "/Users/dacanetdev/.nuget/packages/microsoft.netcore.app.host.osx-x64/8.0.13/microsoft.netcore.app.host.osx-x64.8.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}

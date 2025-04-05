@@ -1,20 +1,47 @@
 # RoadmapSkills
 
-A C# .NET project to track and manage developer roadmap skills. This application helps developers track their progress along various technology learning paths and skill development roadmaps.
+A .NET 8.0 Clean Architecture project implementing a modular monolith design for managing developer roadmap skills. This application helps developers track their progress along various technology learning paths and skill development roadmaps.
 
 ## Project Structure
 
+The solution follows Clean Architecture principles with a modular monolith approach:
+
 ```
-RoadmapSkills/
-├── src/                            # Source code
-│   ├── DeventSoft.RoadmapSkills.Api/         # Web API project
-│   ├── DeventSoft.RoadmapSkills.Core/        # Core business logic
-│   ├── DeventSoft.RoadmapSkills.Infrastructure/  # Infrastructure layer
-│   └── DeventSoft.RoadmapSkills.Domain/      # Domain models and interfaces
-└── tests/                          # Test projects
-    ├── DeventSoft.RoadmapSkills.UnitTests/
-    └── DeventSoft.RoadmapSkills.IntegrationTests/
+src/
+├── Modules/
+│   └── Users/
+│       ├── DeventSoft.RoadmapSkills.Users.Domain
+│       ├── DeventSoft.RoadmapSkills.Users.Application
+│       ├── DeventSoft.RoadmapSkills.Users.Infrastructure
+│       └── DeventSoft.RoadmapSkills.Users.Infrastructure.Abstractions
+└── Shared/
+    ├── DeventSoft.RoadmapSkills.Shared.Domain
+    └── DeventSoft.RoadmapSkills.Shared.Infrastructure
+
+tests/
+└── Modules/
+    └── Users/
+        ├── DeventSoft.RoadmapSkills.Users.UnitTests
+        └── DeventSoft.RoadmapSkills.Users.IntegrationTests
 ```
+
+## Latest Changes
+
+### Users Module Implementation (2024-03-21)
+- Implemented User entity and repository
+- Added UserService with CRUD operations
+- Created unit tests for UserService with 100% coverage
+- Added test coverage configuration using coverlet
+- All tests passing successfully
+
+## Test Coverage
+
+Latest test run results:
+- Total Tests: 8
+- Passed: 8
+- Failed: 0
+- Skipped: 0
+- Duration: 2.0s
 
 ## Prerequisites
 
@@ -63,9 +90,17 @@ dotnet run
 This project follows Clean Architecture principles:
 
 - Domain Layer: Contains enterprise logic and types
-- Core Layer: Contains business logic and interfaces
-- Infrastructure Layer: Contains implementation of core business logic
+- Application Layer: Contains business logic and interfaces
+- Infrastructure Layer: Contains implementation details and external concerns
 - API Layer: Contains API controllers and models
+
+## Technologies Used
+
+- .NET 8.0 (LTS)
+- Entity Framework Core
+- xUnit for testing
+- NSubstitute for mocking
+- Coverlet for code coverage
 
 ## Contributing
 

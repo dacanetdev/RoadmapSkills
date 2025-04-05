@@ -1,0 +1,11 @@
+/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Shared/DeventSoft.RoadmapSkills.Shared.Domain/bin/Debug/net8.0/DeventSoft.RoadmapSkills.Shared.Domain.deps.json
+/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Shared/DeventSoft.RoadmapSkills.Shared.Domain/bin/Debug/net8.0/DeventSoft.RoadmapSkills.Shared.Domain.dll
+/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Shared/DeventSoft.RoadmapSkills.Shared.Domain/bin/Debug/net8.0/DeventSoft.RoadmapSkills.Shared.Domain.pdb
+/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Shared/DeventSoft.RoadmapSkills.Shared.Domain/obj/Debug/net8.0/DeventSoft.RoadmapSkills.Shared.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Shared/DeventSoft.RoadmapSkills.Shared.Domain/obj/Debug/net8.0/DeventSoft.RoadmapSkills.Shared.Domain.AssemblyInfoInputs.cache
+/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Shared/DeventSoft.RoadmapSkills.Shared.Domain/obj/Debug/net8.0/DeventSoft.RoadmapSkills.Shared.Domain.AssemblyInfo.cs
+/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Shared/DeventSoft.RoadmapSkills.Shared.Domain/obj/Debug/net8.0/DeventSoft.RoadmapSkills.Shared.Domain.csproj.CoreCompileInputs.cache
+/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Shared/DeventSoft.RoadmapSkills.Shared.Domain/obj/Debug/net8.0/DeventSoft.RoadmapSkills.Shared.Domain.dll
+/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Shared/DeventSoft.RoadmapSkills.Shared.Domain/obj/Debug/net8.0/refint/DeventSoft.RoadmapSkills.Shared.Domain.dll
+/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Shared/DeventSoft.RoadmapSkills.Shared.Domain/obj/Debug/net8.0/DeventSoft.RoadmapSkills.Shared.Domain.pdb
+/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Shared/DeventSoft.RoadmapSkills.Shared.Domain/obj/Debug/net8.0/ref/DeventSoft.RoadmapSkills.Shared.Domain.dll

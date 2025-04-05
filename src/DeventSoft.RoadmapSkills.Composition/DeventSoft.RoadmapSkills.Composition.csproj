@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Modules\Users\DeventSoft.RoadmapSkills.Users.Application\DeventSoft.RoadmapSkills.Users.Application.csproj" />
+    <ProjectReference Include="..\Modules\Users\DeventSoft.RoadmapSkills.Users.Infrastructure\DeventSoft.RoadmapSkills.Users.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project> 

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/DeventSoft.RoadmapSkills.Api.props" />
+</Project>

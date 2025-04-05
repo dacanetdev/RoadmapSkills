@@ -1,0 +1,89 @@
+{
+  "DeventSoft.RoadmapSkills.Api.dll": {
+    "/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/DeventSoft.RoadmapSkills.Api/Program.cs": {
+      "Program": {
+        "System.Void Program::<Main>$(System.String[])": {
+          "Lines": {
+            "1": 0,
+            "5": 0,
+            "6": 0,
+            "8": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "17": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "39": 0
+          },
+          "Branches": [
+            {
+              "Line": 11,
+              "Offset": 58,
+              "EndOffset": 60,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 11,
+              "Offset": 58,
+              "EndOffset": 78,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 26,
+              "Offset": 15,
+              "EndOffset": 17,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 26,
+              "Offset": 15,
+              "EndOffset": 39,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "WeatherForecast": {
+        "System.DateOnly WeatherForecast::get_Date()": {
+          "Lines": {
+            "41": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 WeatherForecast::get_TemperatureF()": {
+          "Lines": {
+            "43": 0
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}
