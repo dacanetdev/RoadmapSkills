@@ -13,7 +13,7 @@
     <PackageReference Include="FastEndpoints.Swagger" Version="5.23.0" />
     <PackageReference Include="FluentValidation" Version="11.9.0" />
     <PackageReference Include="Mapster" Version="7.4.0" />
-    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.5.0" />
   </ItemGroup>
@@ -21,6 +21,7 @@
   <ItemGroup>
     <ProjectReference Include="..\DeventSoft.RoadmapSkills.Users.Application\DeventSoft.RoadmapSkills.Users.Application.csproj" />
     <ProjectReference Include="..\DeventSoft.RoadmapSkills.Users.Domain\DeventSoft.RoadmapSkills.Users.Domain.csproj" />
+    <ProjectReference Include="..\DeventSoft.RoadmapSkills.Users.Infrastructure\DeventSoft.RoadmapSkills.Users.Infrastructure.csproj" />
     <ProjectReference Include="..\..\..\Shared\DeventSoft.RoadmapSkills.Shared.Domain\DeventSoft.RoadmapSkills.Shared.Domain.csproj" />
   </ItemGroup>
 

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DeventSoft.RoadmapSkills.Users.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b13bcf834f99f5ed6b1cfe5a587c4f60af766ceb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9e0dc6fb885eaa62c1d11f6da02440c3e8f0810d")]
 [assembly: System.Reflection.AssemblyProductAttribute("DeventSoft.RoadmapSkills.Users.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DeventSoft.RoadmapSkills.Users.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
