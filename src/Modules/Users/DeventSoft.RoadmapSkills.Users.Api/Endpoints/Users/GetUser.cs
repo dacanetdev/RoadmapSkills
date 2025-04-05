@@ -28,11 +28,11 @@ public class GetUserEndpoint : EndpointWithoutRequest<GetUserResponse>
     public override void Configure()
     {
         Get("/api/users/{id}");
-        Description(d => d
-            .WithName("GetUser")
-            .WithTags("Users")
-            .WithSummary("Gets a user by ID")
-            .WithDescription("Retrieves a user's information by their unique identifier"));
+        Summary(s => {
+            s.Summary = "Gets a user by ID";
+            s.Description = "Retrieves a user's information by their unique identifier";
+        });
+        Tags("Users");
     }
 
     public override async Task HandleAsync(CancellationToken ct)

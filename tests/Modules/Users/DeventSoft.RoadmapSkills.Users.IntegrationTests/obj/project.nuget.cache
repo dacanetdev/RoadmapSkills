@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "rtz49EisZbc=",
+  "dgSpecHash": "GStsm1CMxAs=",
   "success": true,
   "projectFilePath": "/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/tests/Modules/Users/DeventSoft.RoadmapSkills.Users.IntegrationTests/DeventSoft.RoadmapSkills.Users.IntegrationTests.csproj",
   "expectedPackageFiles": [
     "/Users/dacanetdev/.nuget/packages/coverlet.collector/6.0.0/coverlet.collector.6.0.0.nupkg.sha512",
-    "/Users/dacanetdev/.nuget/packages/coverlet.msbuild/6.0.0/coverlet.msbuild.6.0.0.nupkg.sha512",
+    "/Users/dacanetdev/.nuget/packages/coverlet.msbuild/6.0.4/coverlet.msbuild.6.0.4.nupkg.sha512",
     "/Users/dacanetdev/.nuget/packages/microsoft.aspnetcore.mvc.testing/8.0.3/microsoft.aspnetcore.mvc.testing.8.0.3.nupkg.sha512",
     "/Users/dacanetdev/.nuget/packages/microsoft.aspnetcore.openapi/8.0.3/microsoft.aspnetcore.openapi.8.0.3.nupkg.sha512",
     "/Users/dacanetdev/.nuget/packages/microsoft.aspnetcore.testhost/8.0.3/microsoft.aspnetcore.testhost.8.0.3.nupkg.sha512",
@@ -150,8 +150,8 @@
     "/Users/dacanetdev/.nuget/packages/xunit.extensibility.core/2.5.3/xunit.extensibility.core.2.5.3.nupkg.sha512",
     "/Users/dacanetdev/.nuget/packages/xunit.extensibility.execution/2.5.3/xunit.extensibility.execution.2.5.3.nupkg.sha512",
     "/Users/dacanetdev/.nuget/packages/xunit.runner.visualstudio/2.5.3/xunit.runner.visualstudio.2.5.3.nupkg.sha512",
-    "/Users/dacanetdev/.nuget/packages/microsoft.netcore.app.ref/8.0.13/microsoft.netcore.app.ref.8.0.13.nupkg.sha512",
-    "/Users/dacanetdev/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.13/microsoft.aspnetcore.app.ref.8.0.13.nupkg.sha512"
+    "/Users/dacanetdev/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.13/microsoft.aspnetcore.app.ref.8.0.13.nupkg.sha512",
+    "/Users/dacanetdev/.nuget/packages/microsoft.netcore.app.ref/8.0.13/microsoft.netcore.app.ref.8.0.13.nupkg.sha512"
   ],
   "logs": []
 }

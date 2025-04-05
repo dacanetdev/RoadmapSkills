@@ -10,6 +10,7 @@
 /Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Modules/Users/DeventSoft.RoadmapSkills.Users.Infrastructure.Abstractions/obj/Debug/net8.0/DeventSoft.RoadmapSkills.Users.Infrastructure.Abstractions.AssemblyInfoInputs.cache
 /Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Modules/Users/DeventSoft.RoadmapSkills.Users.Infrastructure.Abstractions/obj/Debug/net8.0/DeventSoft.RoadmapSkills.Users.Infrastructure.Abstractions.AssemblyInfo.cs
 /Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Modules/Users/DeventSoft.RoadmapSkills.Users.Infrastructure.Abstractions/obj/Debug/net8.0/DeventSoft.RoadmapSkills.Users.Infrastructure.Abstractions.csproj.CoreCompileInputs.cache
+/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Modules/Users/DeventSoft.RoadmapSkills.Users.Infrastructure.Abstractions/obj/Debug/net8.0/DeventSoft.RoadmapSkills.Users.Infrastructure.Abstractions.sourcelink.json
 /Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Modules/Users/DeventSoft.RoadmapSkills.Users.Infrastructure.Abstractions/obj/Debug/net8.0/DeventSo.B6383D35.Up2Date
 /Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Modules/Users/DeventSoft.RoadmapSkills.Users.Infrastructure.Abstractions/obj/Debug/net8.0/DeventSoft.RoadmapSkills.Users.Infrastructure.Abstractions.dll
 /Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Modules/Users/DeventSoft.RoadmapSkills.Users.Infrastructure.Abstractions/obj/Debug/net8.0/refint/DeventSoft.RoadmapSkills.Users.Infrastructure.Abstractions.dll

@@ -33,11 +33,11 @@ public class GetUsersEndpoint : EndpointWithoutRequest<GetUsersResponse>
     public override void Configure()
     {
         Get("/api/users");
-        Description(d => d
-            .WithName("GetUsers")
-            .WithTags("Users")
-            .WithSummary("Gets all users")
-            .WithDescription("Retrieves a list of all active users"));
+        Summary(s => {
+            s.Summary = "Gets all users";
+            s.Description = "Retrieves a list of all active users";
+        });
+        Tags("Users");
     }
 
     public override async Task HandleAsync(CancellationToken ct)

@@ -18,6 +18,7 @@
 /Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/DeventSoft.RoadmapSkills.Composition/obj/Debug/net8.0/DeventSoft.RoadmapSkills.Composition.AssemblyInfoInputs.cache
 /Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/DeventSoft.RoadmapSkills.Composition/obj/Debug/net8.0/DeventSoft.RoadmapSkills.Composition.AssemblyInfo.cs
 /Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/DeventSoft.RoadmapSkills.Composition/obj/Debug/net8.0/DeventSoft.RoadmapSkills.Composition.csproj.CoreCompileInputs.cache
+/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/DeventSoft.RoadmapSkills.Composition/obj/Debug/net8.0/DeventSoft.RoadmapSkills.Composition.sourcelink.json
 /Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/DeventSoft.RoadmapSkills.Composition/obj/Debug/net8.0/DeventSo.0003E71F.Up2Date
 /Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/DeventSoft.RoadmapSkills.Composition/obj/Debug/net8.0/DeventSoft.RoadmapSkills.Composition.dll
 /Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/DeventSoft.RoadmapSkills.Composition/obj/Debug/net8.0/refint/DeventSoft.RoadmapSkills.Composition.dll

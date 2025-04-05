@@ -1,5 +1,6 @@
 using DeventSoft.RoadmapSkills.Users.Application;
 using DeventSoft.RoadmapSkills.Users.Infrastructure;
+using DeventSoft.RoadmapSkills.Users.Infrastructure.Extensions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -14,5 +15,11 @@ public static class DependencyInjection
                .AddUsersInfrastructure(configuration);
 
         return services;
+    }
+
+    public static async Task MigrateRoadmapSkillsDatabasesAsync(this IServiceProvider serviceProvider)
+    {
+        // Migrate Users module database
+        await serviceProvider.MigrateUsersDatabaseAsync();
     }
 } 

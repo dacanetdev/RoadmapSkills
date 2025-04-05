@@ -9,8 +9,12 @@
     <IsTestProject>true</IsTestProject>
     <CollectCoverage>true</CollectCoverage>
     <CoverletOutputFormat>cobertura</CoverletOutputFormat>
-    <CoverletOutput>./TestResults/</CoverletOutput>
+    <CoverletOutput>$(MSBuildProjectDirectory)/TestResults/</CoverletOutput>
+    <DeterministicSourcePaths>false</DeterministicSourcePaths>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
     <ExcludeByAttribute>Obsolete,GeneratedCodeAttribute,CompilerGeneratedAttribute</ExcludeByAttribute>
+    <Include>[DeventSoft.RoadmapSkills.*]*</Include>
   </PropertyGroup>
 
   <ItemGroup>

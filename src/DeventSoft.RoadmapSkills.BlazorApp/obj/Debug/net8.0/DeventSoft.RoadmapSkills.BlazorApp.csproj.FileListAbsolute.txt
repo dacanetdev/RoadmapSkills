@@ -12,6 +12,7 @@
 /Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/DeventSoft.RoadmapSkills.BlazorApp/obj/Debug/net8.0/DeventSoft.RoadmapSkills.BlazorApp.AssemblyInfo.cs
 /Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/DeventSoft.RoadmapSkills.BlazorApp/obj/Debug/net8.0/DeventSoft.RoadmapSkills.BlazorApp.csproj.CoreCompileInputs.cache
 /Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/DeventSoft.RoadmapSkills.BlazorApp/obj/Debug/net8.0/DeventSoft.RoadmapSkills.BlazorApp.MvcApplicationPartsAssemblyInfo.cache
+/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/DeventSoft.RoadmapSkills.BlazorApp/obj/Debug/net8.0/DeventSoft.RoadmapSkills.BlazorApp.sourcelink.json
 /Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/DeventSoft.RoadmapSkills.BlazorApp/obj/Debug/net8.0/scopedcss/Components/Layout/MainLayout.razor.rz.scp.css
 /Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/DeventSoft.RoadmapSkills.BlazorApp/obj/Debug/net8.0/scopedcss/Components/Layout/NavMenu.razor.rz.scp.css
 /Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/DeventSoft.RoadmapSkills.BlazorApp/obj/Debug/net8.0/scopedcss/bundle/DeventSoft.RoadmapSkills.BlazorApp.styles.css

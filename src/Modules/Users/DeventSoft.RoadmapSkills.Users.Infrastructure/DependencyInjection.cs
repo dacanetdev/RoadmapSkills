@@ -1,4 +1,5 @@
 using DeventSoft.RoadmapSkills.Users.Domain.Repositories;
+using DeventSoft.RoadmapSkills.Users.Infrastructure.Extensions;
 using DeventSoft.RoadmapSkills.Users.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;

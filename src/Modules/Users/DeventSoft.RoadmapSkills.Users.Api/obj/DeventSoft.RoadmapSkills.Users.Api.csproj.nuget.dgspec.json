@@ -26,8 +26,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Modules/Users/DeventSoft.RoadmapSkills.Users.Infrastructure/DeventSoft.RoadmapSkills.Users.Infrastructure.csproj": {
-                "projectPath": "/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Modules/Users/DeventSoft.RoadmapSkills.Users.Infrastructure/DeventSoft.RoadmapSkills.Users.Infrastructure.csproj"
+              "/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Modules/Users/DeventSoft.RoadmapSkills.Users.Application/DeventSoft.RoadmapSkills.Users.Application.csproj": {
+                "projectPath": "/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Modules/Users/DeventSoft.RoadmapSkills.Users.Application/DeventSoft.RoadmapSkills.Users.Application.csproj"
+              },
+              "/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Modules/Users/DeventSoft.RoadmapSkills.Users.Domain/DeventSoft.RoadmapSkills.Users.Domain.csproj": {
+                "projectPath": "/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Modules/Users/DeventSoft.RoadmapSkills.Users.Domain/DeventSoft.RoadmapSkills.Users.Domain.csproj"
+              },
+              "/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Shared/DeventSoft.RoadmapSkills.Shared.Domain/DeventSoft.RoadmapSkills.Shared.Domain.csproj": {
+                "projectPath": "/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Shared/DeventSoft.RoadmapSkills.Shared.Domain/DeventSoft.RoadmapSkills.Shared.Domain.csproj"
               }
             }
           }
@@ -48,13 +54,33 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "FastEndpoints": {
+              "target": "Package",
+              "version": "[5.23.0, )"
+            },
+            "FastEndpoints.Swagger": {
+              "target": "Package",
+              "version": "[5.23.0, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.0, )"
+            },
+            "Mapster": {
+              "target": "Package",
+              "version": "[7.4.0, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[8.0.3, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.4.0, )"
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.5.0, )"
             }
           },
           "imports": [
@@ -86,6 +112,88 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Modules/Users/DeventSoft.RoadmapSkills.Users.Application/DeventSoft.RoadmapSkills.Users.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Modules/Users/DeventSoft.RoadmapSkills.Users.Application/DeventSoft.RoadmapSkills.Users.Application.csproj",
+        "projectName": "DeventSoft.RoadmapSkills.Users.Application",
+        "projectPath": "/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Modules/Users/DeventSoft.RoadmapSkills.Users.Application/DeventSoft.RoadmapSkills.Users.Application.csproj",
+        "packagesPath": "/Users/dacanetdev/.nuget/packages/",
+        "outputPath": "/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Modules/Users/DeventSoft.RoadmapSkills.Users.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/dacanetdev/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Modules/Users/DeventSoft.RoadmapSkills.Users.Domain/DeventSoft.RoadmapSkills.Users.Domain.csproj": {
+                "projectPath": "/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Modules/Users/DeventSoft.RoadmapSkills.Users.Domain/DeventSoft.RoadmapSkills.Users.Domain.csproj"
+              },
+              "/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Modules/Users/DeventSoft.RoadmapSkills.Users.Infrastructure.Abstractions/DeventSoft.RoadmapSkills.Users.Infrastructure.Abstractions.csproj": {
+                "projectPath": "/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Modules/Users/DeventSoft.RoadmapSkills.Users.Infrastructure.Abstractions/DeventSoft.RoadmapSkills.Users.Infrastructure.Abstractions.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.13, 8.0.13]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.13, 8.0.13]"
+            }
+          ],
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -240,103 +348,6 @@
         }
       }
     },
-    "/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Modules/Users/DeventSoft.RoadmapSkills.Users.Infrastructure/DeventSoft.RoadmapSkills.Users.Infrastructure.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Modules/Users/DeventSoft.RoadmapSkills.Users.Infrastructure/DeventSoft.RoadmapSkills.Users.Infrastructure.csproj",
-        "projectName": "DeventSoft.RoadmapSkills.Users.Infrastructure",
-        "projectPath": "/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Modules/Users/DeventSoft.RoadmapSkills.Users.Infrastructure/DeventSoft.RoadmapSkills.Users.Infrastructure.csproj",
-        "packagesPath": "/Users/dacanetdev/.nuget/packages/",
-        "outputPath": "/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Modules/Users/DeventSoft.RoadmapSkills.Users.Infrastructure/obj/",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "/Users/dacanetdev/.nuget/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
-            "projectReferences": {
-              "/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Modules/Users/DeventSoft.RoadmapSkills.Users.Domain/DeventSoft.RoadmapSkills.Users.Domain.csproj": {
-                "projectPath": "/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Modules/Users/DeventSoft.RoadmapSkills.Users.Domain/DeventSoft.RoadmapSkills.Users.Domain.csproj"
-              },
-              "/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Modules/Users/DeventSoft.RoadmapSkills.Users.Infrastructure.Abstractions/DeventSoft.RoadmapSkills.Users.Infrastructure.Abstractions.csproj": {
-                "projectPath": "/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Modules/Users/DeventSoft.RoadmapSkills.Users.Infrastructure.Abstractions/DeventSoft.RoadmapSkills.Users.Infrastructure.Abstractions.csproj"
-              },
-              "/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Shared/DeventSoft.RoadmapSkills.Shared.Infrastructure/DeventSoft.RoadmapSkills.Shared.Infrastructure.csproj": {
-                "projectPath": "/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Shared/DeventSoft.RoadmapSkills.Shared.Infrastructure/DeventSoft.RoadmapSkills.Shared.Infrastructure.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
-      },
-      "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[8.0.3, )"
-            },
-            "Microsoft.EntityFrameworkCore.Sqlite": {
-              "target": "Package",
-              "version": "[8.0.3, )"
-            },
-            "Microsoft.Extensions.Configuration.Abstractions": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "Microsoft.Extensions.DependencyInjection.Abstractions": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
-            }
-          ],
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
     "/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Shared/DeventSoft.RoadmapSkills.Shared.Domain/DeventSoft.RoadmapSkills.Shared.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -376,101 +387,6 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
-            }
-          ],
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Shared/DeventSoft.RoadmapSkills.Shared.Infrastructure/DeventSoft.RoadmapSkills.Shared.Infrastructure.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Shared/DeventSoft.RoadmapSkills.Shared.Infrastructure/DeventSoft.RoadmapSkills.Shared.Infrastructure.csproj",
-        "projectName": "DeventSoft.RoadmapSkills.Shared.Infrastructure",
-        "projectPath": "/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Shared/DeventSoft.RoadmapSkills.Shared.Infrastructure/DeventSoft.RoadmapSkills.Shared.Infrastructure.csproj",
-        "packagesPath": "/Users/dacanetdev/.nuget/packages/",
-        "outputPath": "/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Shared/DeventSoft.RoadmapSkills.Shared.Infrastructure/obj/",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "/Users/dacanetdev/.nuget/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
-            "projectReferences": {
-              "/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Shared/DeventSoft.RoadmapSkills.Shared.Domain/DeventSoft.RoadmapSkills.Shared.Domain.csproj": {
-                "projectPath": "/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/Shared/DeventSoft.RoadmapSkills.Shared.Domain/DeventSoft.RoadmapSkills.Shared.Domain.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
-      },
-      "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[8.0.3, )"
-            },
-            "Microsoft.EntityFrameworkCore.Relational": {
-              "target": "Package",
-              "version": "[8.0.3, )"
-            },
-            "Microsoft.EntityFrameworkCore.Sqlite": {
-              "target": "Package",
-              "version": "[8.0.3, )"
-            },
-            "Microsoft.Extensions.DependencyInjection": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "Microsoft.Extensions.DependencyInjection.Abstractions": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

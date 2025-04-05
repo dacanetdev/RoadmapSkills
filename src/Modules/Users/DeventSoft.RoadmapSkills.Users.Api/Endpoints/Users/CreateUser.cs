@@ -1,9 +1,13 @@
-using FastEndpoints;
+using DeventSoft.RoadmapSkills.Shared.Domain.Common;
 using DeventSoft.RoadmapSkills.Users.Domain.Entities;
 using DeventSoft.RoadmapSkills.Users.Domain.Repositories;
-using DeventSoft.RoadmapSkills.Shared.Infrastructure.Common;
+using FastEndpoints;
+using FastEndpoints.Swagger;
 using FluentValidation;
 using Mapster;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Identity;
 
 namespace DeventSoft.RoadmapSkills.Users.Api.Endpoints.Users;
 
@@ -65,9 +69,9 @@ public class CreateUserEndpoint : Endpoint<CreateUserRequest, CreateUserResponse
 {
     private readonly IUserRepository _userRepository;
     private readonly IUnitOfWork _unitOfWork;
-    private readonly IPasswordHasher _passwordHasher;
+    private readonly IPasswordHasher<User> _passwordHasher;
 
-    public CreateUserEndpoint(IUserRepository userRepository, IUnitOfWork unitOfWork, IPasswordHasher passwordHasher)
+    public CreateUserEndpoint(IUserRepository userRepository, IUnitOfWork unitOfWork, IPasswordHasher<User> passwordHasher)
     {
         _userRepository = userRepository;
         _unitOfWork = unitOfWork;
@@ -86,15 +90,15 @@ public class CreateUserEndpoint : Endpoint<CreateUserRequest, CreateUserResponse
     }
 
     public override async Task HandleAsync(CreateUserRequest req, CancellationToken ct)
-    {
-        var passwordHash = _passwordHasher.HashPassword(req.Password);
-        
+    {    
         var user = new User(
             req.Username,
             req.Email,
             req.FirstName,
-            req.LastName,
-            passwordHash);
+            req.LastName);
+
+        var passwordHash = _passwordHasher.HashPassword(user, req.Password);
+        user.UpdatePassword(passwordHash);
 
         await _userRepository.AddAsync(user);
         await _unitOfWork.SaveChangesAsync(ct);

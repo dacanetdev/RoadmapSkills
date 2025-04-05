@@ -21,11 +21,11 @@ public class UserServiceTests
     public async Task GetAllUsersAsync_ShouldReturnAllUsers()
     {
         // Arrange
-        var expectedUsers = new List<User>
-        {
-            new("user1", "user1@test.com", "User", "One", "hash1"),
-            new("user2", "user2@test.com", "User", "Two", "hash2")
-        };
+        var user1 = new User("user1", "user1@test.com", "User", "One");
+        user1.UpdatePassword("hash1");
+        var user2 = new User("user2", "user2@test.com", "User", "Two");
+        user2.UpdatePassword("hash2");
+        var expectedUsers = new List<User> { user1, user2 };
         _userRepository.GetAllAsync().Returns(expectedUsers);
 
         // Act
@@ -41,14 +41,15 @@ public class UserServiceTests
     {
         // Arrange
         var userId = Guid.NewGuid();
-        var expectedUser = new User("user1", "user1@test.com", "User", "One", "hash1");
-        _userRepository.GetByIdAsync(userId).Returns(expectedUser);
+        var user = new User("user1", "user1@test.com", "User", "One");
+        user.UpdatePassword("hash1");
+        _userRepository.GetByIdAsync(userId).Returns(user);
 
         // Act
         var result = await _sut.GetUserByIdAsync(userId);
 
         // Assert
-        Assert.Equal(expectedUser, result);
+        Assert.Equal(user, result);
         await _userRepository.Received(1).GetByIdAsync(userId);
     }
 
@@ -71,7 +72,8 @@ public class UserServiceTests
     public async Task CreateUserAsync_ShouldAddUser()
     {
         // Arrange
-        var user = new User("newuser", "newuser@test.com", "New", "User", "hash");
+        var user = new User("newuser", "newuser@test.com", "New", "User");
+        user.UpdatePassword("hash");
 
         // Act
         await _sut.CreateUserAsync(user);
@@ -84,7 +86,8 @@ public class UserServiceTests
     public async Task UpdateUserAsync_WithExistingUser_ShouldReturnTrue()
     {
         // Arrange
-        var user = new User("user1", "user1@test.com", "User", "One", "hash1");
+        var user = new User("user1", "user1@test.com", "User", "One");
+        user.UpdatePassword("hash1");
         _userRepository.GetByIdAsync(user.Id).Returns(user);
 
         // Act
@@ -99,7 +102,8 @@ public class UserServiceTests
     public async Task UpdateUserAsync_WithNonExistingUser_ShouldReturnFalse()
     {
         // Arrange
-        var user = new User("user1", "user1@test.com", "User", "One", "hash1");
+        var user = new User("user1", "user1@test.com", "User", "One");
+        user.UpdatePassword("hash1");
         _userRepository.GetByIdAsync(user.Id).Returns((User?)null);
 
         // Act
@@ -115,7 +119,8 @@ public class UserServiceTests
     {
         // Arrange
         var userId = Guid.NewGuid();
-        var user = new User("user1", "user1@test.com", "User", "One", "hash1");
+        var user = new User("user1", "user1@test.com", "User", "One");
+        user.UpdatePassword("hash1");
         _userRepository.GetByIdAsync(userId).Returns(user);
 
         // Act

@@ -13,13 +13,12 @@ public class User : Entity
 
     private User() { } // For EF Core
 
-    public User(string username, string email, string firstName, string lastName, string passwordHash)
+    public User(string username, string email, string firstName, string lastName)
     {
         Username = username;
         Email = email;
         FirstName = firstName;
         LastName = lastName;
-        PasswordHash = passwordHash;
         IsActive = true;
     }
 

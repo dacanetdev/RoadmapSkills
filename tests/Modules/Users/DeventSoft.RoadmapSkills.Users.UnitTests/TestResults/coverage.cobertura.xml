@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<coverage line-rate="0.2857" branch-rate="1" version="1.9" timestamp="1743811749" lines-covered="18" lines-valid="63" branches-covered="0" branches-valid="0">
+<coverage line-rate="0.387" branch-rate="1" version="1.9" timestamp="1743844398" lines-covered="24" lines-valid="62" branches-covered="0" branches-valid="0">
   <sources>
     <source>/Users/dacanetdev/Dev/AIGenerated/RoadmapSkills/src/</source>
   </sources>
@@ -44,9 +44,9 @@
         </class>
       </classes>
     </package>
-    <package name="DeventSoft.RoadmapSkills.Shared.Domain" line-rate="0.41659999999999997" branch-rate="1" complexity="3">
+    <package name="DeventSoft.RoadmapSkills.Shared.Domain" line-rate="0.6666" branch-rate="1" complexity="3">
       <classes>
-        <class name="DeventSoft.RoadmapSkills.Shared.Domain.Common.Entity" filename="Shared/DeventSoft.RoadmapSkills.Shared.Domain/Common/Entity.cs" line-rate="0.41659999999999997" branch-rate="1" complexity="3">
+        <class name="DeventSoft.RoadmapSkills.Shared.Domain.Common.Entity" filename="Shared/DeventSoft.RoadmapSkills.Shared.Domain/Common/Entity.cs" line-rate="0.6666" branch-rate="1" complexity="3">
           <methods>
             <method name="MarkAsDeleted" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -56,11 +56,11 @@
                 <line number="20" hits="0" branch="False" />
               </lines>
             </method>
-            <method name="Update" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="Update" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="23" hits="0" branch="False" />
-                <line number="24" hits="0" branch="False" />
-                <line number="25" hits="0" branch="False" />
+                <line number="23" hits="7" branch="False" />
+                <line number="24" hits="7" branch="False" />
+                <line number="25" hits="7" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -78,9 +78,9 @@
             <line number="18" hits="0" branch="False" />
             <line number="19" hits="0" branch="False" />
             <line number="20" hits="0" branch="False" />
-            <line number="23" hits="0" branch="False" />
-            <line number="24" hits="0" branch="False" />
-            <line number="25" hits="0" branch="False" />
+            <line number="23" hits="7" branch="False" />
+            <line number="24" hits="7" branch="False" />
+            <line number="25" hits="7" branch="False" />
             <line number="10" hits="7" branch="False" />
             <line number="11" hits="7" branch="False" />
             <line number="12" hits="7" branch="False" />
@@ -90,49 +90,49 @@
         </class>
       </classes>
     </package>
-    <package name="DeventSoft.RoadmapSkills.Users.Domain" line-rate="0.20929999999999999" branch-rate="1" complexity="10">
+    <package name="DeventSoft.RoadmapSkills.Users.Domain" line-rate="0.2857" branch-rate="1" complexity="10">
       <classes>
-        <class name="DeventSoft.RoadmapSkills.Users.Domain.Entities.User" filename="Modules/Users/DeventSoft.RoadmapSkills.Users.Domain/Entities/User.cs" line-rate="0.2903" branch-rate="1" complexity="7">
+        <class name="DeventSoft.RoadmapSkills.Users.Domain.Entities.User" filename="Modules/Users/DeventSoft.RoadmapSkills.Users.Domain/Entities/User.cs" line-rate="0.4" branch-rate="1" complexity="7">
           <methods>
             <method name="UpdateProfile" signature="(System.String,System.String)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
+                <line number="26" hits="0" branch="False" />
                 <line number="27" hits="0" branch="False" />
                 <line number="28" hits="0" branch="False" />
                 <line number="29" hits="0" branch="False" />
                 <line number="30" hits="0" branch="False" />
-                <line number="31" hits="0" branch="False" />
               </lines>
             </method>
             <method name="UpdateEmail" signature="(System.String)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
+                <line number="33" hits="0" branch="False" />
                 <line number="34" hits="0" branch="False" />
                 <line number="35" hits="0" branch="False" />
                 <line number="36" hits="0" branch="False" />
-                <line number="37" hits="0" branch="False" />
               </lines>
             </method>
-            <method name="UpdatePassword" signature="(System.String)" line-rate="0" branch-rate="1" complexity="1">
+            <method name="UpdatePassword" signature="(System.String)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="40" hits="0" branch="False" />
-                <line number="41" hits="0" branch="False" />
-                <line number="42" hits="0" branch="False" />
-                <line number="43" hits="0" branch="False" />
+                <line number="39" hits="7" branch="False" />
+                <line number="40" hits="7" branch="False" />
+                <line number="41" hits="7" branch="False" />
+                <line number="42" hits="7" branch="False" />
               </lines>
             </method>
             <method name="Deactivate" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
+                <line number="45" hits="0" branch="False" />
                 <line number="46" hits="0" branch="False" />
                 <line number="47" hits="0" branch="False" />
                 <line number="48" hits="0" branch="False" />
-                <line number="49" hits="0" branch="False" />
               </lines>
             </method>
             <method name="Activate" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
+                <line number="51" hits="0" branch="False" />
                 <line number="52" hits="0" branch="False" />
                 <line number="53" hits="0" branch="False" />
                 <line number="54" hits="0" branch="False" />
-                <line number="55" hits="0" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
@@ -140,7 +140,7 @@
                 <line number="14" hits="0" branch="False" />
               </lines>
             </method>
-            <method name=".ctor" signature="(System.String,System.String,System.String,System.String,System.String)" line-rate="1" branch-rate="1" complexity="1">
+            <method name=".ctor" signature="(System.String,System.String,System.String,System.String)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
                 <line number="16" hits="7" branch="False" />
                 <line number="17" hits="7" branch="False" />
@@ -150,32 +150,31 @@
                 <line number="21" hits="7" branch="False" />
                 <line number="22" hits="7" branch="False" />
                 <line number="23" hits="7" branch="False" />
-                <line number="24" hits="7" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
+            <line number="26" hits="0" branch="False" />
             <line number="27" hits="0" branch="False" />
             <line number="28" hits="0" branch="False" />
             <line number="29" hits="0" branch="False" />
             <line number="30" hits="0" branch="False" />
-            <line number="31" hits="0" branch="False" />
+            <line number="33" hits="0" branch="False" />
             <line number="34" hits="0" branch="False" />
             <line number="35" hits="0" branch="False" />
             <line number="36" hits="0" branch="False" />
-            <line number="37" hits="0" branch="False" />
-            <line number="40" hits="0" branch="False" />
-            <line number="41" hits="0" branch="False" />
-            <line number="42" hits="0" branch="False" />
-            <line number="43" hits="0" branch="False" />
+            <line number="39" hits="7" branch="False" />
+            <line number="40" hits="7" branch="False" />
+            <line number="41" hits="7" branch="False" />
+            <line number="42" hits="7" branch="False" />
+            <line number="45" hits="0" branch="False" />
             <line number="46" hits="0" branch="False" />
             <line number="47" hits="0" branch="False" />
             <line number="48" hits="0" branch="False" />
-            <line number="49" hits="0" branch="False" />
+            <line number="51" hits="0" branch="False" />
             <line number="52" hits="0" branch="False" />
             <line number="53" hits="0" branch="False" />
             <line number="54" hits="0" branch="False" />
-            <line number="55" hits="0" branch="False" />
             <line number="14" hits="0" branch="False" />
             <line number="16" hits="7" branch="False" />
             <line number="17" hits="7" branch="False" />
@@ -185,7 +184,6 @@
             <line number="21" hits="7" branch="False" />
             <line number="22" hits="7" branch="False" />
             <line number="23" hits="7" branch="False" />
-            <line number="24" hits="7" branch="False" />
           </lines>
         </class>
         <class name="DeventSoft.RoadmapSkills.Users.Domain.Common.Entity" filename="Modules/Users/DeventSoft.RoadmapSkills.Users.Domain/Common/Entity.cs" line-rate="0" branch-rate="1" complexity="3">
