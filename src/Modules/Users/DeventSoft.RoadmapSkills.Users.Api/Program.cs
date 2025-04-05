@@ -14,18 +14,26 @@ public class Program
         var builder = WebApplication.CreateBuilder(args);
 
         // Add services to the container.
-        builder.Services.AddFastEndpoints();
-        builder.Services.AddAuthentication();
-        builder.Services.AddAuthorization();
-        
-        // Add infrastructure services
         builder.Services.AddUsersInfrastructure(builder.Configuration);
-        
-        // Configure Swagger
+        builder.Services.AddFastEndpoints();
         builder.Services.AddEndpointsApiExplorer();
-        builder.Services.AddSwaggerGen(c => {
-            c.SwaggerDoc("v1", new() { Title = "DeventSoft RoadmapSkills Users API", Version = "v1" });
-        });
+        builder.Services.AddSwaggerGen();
+
+        // Add authentication
+        builder.Services.AddAuthentication("Bearer")
+            .AddJwtBearer("Bearer", options =>
+            {
+                options.Authority = builder.Configuration["Authentication:Authority"];
+                options.RequireHttpsMetadata = false;
+                options.TokenValidationParameters = new()
+                {
+                    ValidateAudience = false,
+                    ValidateIssuer = false
+                };
+            });
+
+        // Add authorization
+        builder.Services.AddAuthorization();
 
         var app = builder.Build();
 
@@ -33,9 +41,7 @@ public class Program
         if (app.Environment.IsDevelopment())
         {
             app.UseSwagger();
-            app.UseSwaggerUI(c => {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "DeventSoft RoadmapSkills Users API v1");
-            });
+            app.UseSwaggerUI();
         }
 
         app.UseAuthentication();
