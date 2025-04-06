@@ -4,27 +4,24 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <DebugType>full</DebugType>
-    <DebugSymbols>true</DebugSymbols>
-    <InvariantGlobalization>true</InvariantGlobalization>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="FastEndpoints" Version="5.22.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
-    <PackageReference Include="FluentValidation" Version="11.9.0" />
+    <PackageReference Include="FastEndpoints.Security" Version="5.22.0" />
+    <PackageReference Include="FastEndpoints.Swagger" Version="5.22.0" />
     <PackageReference Include="Mapster" Version="7.4.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.3" />
-    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="8.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
-    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.5.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\DeventSoft.RoadmapSkills.Users.Application\DeventSoft.RoadmapSkills.Users.Application.csproj" />
     <ProjectReference Include="..\DeventSoft.RoadmapSkills.Users.Domain\DeventSoft.RoadmapSkills.Users.Domain.csproj" />
     <ProjectReference Include="..\DeventSoft.RoadmapSkills.Users.Infrastructure\DeventSoft.RoadmapSkills.Users.Infrastructure.csproj" />
-    <ProjectReference Include="..\..\..\Shared\DeventSoft.RoadmapSkills.Shared.Domain\DeventSoft.RoadmapSkills.Shared.Domain.csproj" />
+    <ProjectReference Include="..\..\..\Shared\DeventSoft.RoadmapSkills.Shared.Infrastructure\DeventSoft.RoadmapSkills.Shared.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
