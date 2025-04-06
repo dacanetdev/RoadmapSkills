@@ -17,9 +17,12 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="8.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
     <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.5.0" />
+    <PackageReference Include="FastEndpoints" Version="5.22.0" />
+    <PackageReference Include="FastEndpoints.Swagger" Version="5.22.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Modules\Users\DeventSoft.RoadmapSkills.Users.Api\DeventSoft.RoadmapSkills.Users.Api.csproj" />
     <ProjectReference Include="..\Modules\Users\DeventSoft.RoadmapSkills.Users.Application\DeventSoft.RoadmapSkills.Users.Application.csproj" />
     <ProjectReference Include="..\DeventSoft.RoadmapSkills.Composition\DeventSoft.RoadmapSkills.Composition.csproj" />
   </ItemGroup>

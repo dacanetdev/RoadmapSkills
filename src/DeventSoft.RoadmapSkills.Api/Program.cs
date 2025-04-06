@@ -1,7 +1,9 @@
 using System.Reflection;
 using DeventSoft.RoadmapSkills.Composition;
-using DeventSoft.RoadmapSkills.Users.Application.Services;
-using DeventSoft.RoadmapSkills.Users.Domain.Entities;
+using DeventSoft.RoadmapSkills.Users.Api.Extensions;
+using FastEndpoints;
+using FastEndpoints.Swagger;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
@@ -10,6 +12,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddFastEndpoints();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {
@@ -39,6 +42,7 @@ builder.Services.AddSwaggerGen(options =>
 
 // Register modules
 builder.Services.AddRoadmapSkills(builder.Configuration);
+builder.Services.AddUsersEndpoints();
 
 var app = builder.Build();
 
@@ -57,66 +61,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
-// User endpoints
-var users = app.MapGroup("/api/users");
-
-users.MapGet("/", async (IUserService userService) =>
-    {
-        var result = await userService.GetAllUsersAsync();
-        return Results.Ok(result);
-    })
-    .WithName("GetUsers")
-    .WithOpenApi()
-    .WithTags("Users")
-    .Produces<IEnumerable<User>>(200);
-
-users.MapGet("/{id}", async (Guid id, IUserService userService) =>
-    {
-        var user = await userService.GetUserByIdAsync(id);
-        return user is null ? Results.NotFound() : Results.Ok(user);
-    })
-    .WithName("GetUserById")
-    .WithOpenApi()
-    .WithTags("Users")
-    .Produces<User>(200)
-    .Produces(404);
-
-users.MapPost("/", async (User user, IUserService userService) =>
-    {
-        await userService.CreateUserAsync(user);
-        return Results.Created($"/api/users/{user.Id}", user);
-    })
-    .WithName("CreateUser")
-    .WithOpenApi()
-    .WithTags("Users")
-    .Produces<User>(201)
-    .ProducesValidationProblem();
-
-users.MapPut("/{id}", async (Guid id, User user, IUserService userService) =>
-    {
-        if (id != user.Id)
-            return Results.BadRequest();
-            
-        var updated = await userService.UpdateUserAsync(user);
-        return updated ? Results.NoContent() : Results.NotFound();
-    })
-    .WithName("UpdateUser")
-    .WithOpenApi()
-    .WithTags("Users")
-    .Produces(204)
-    .Produces(404)
-    .ProducesValidationProblem();
-
-users.MapDelete("/{id}", async (Guid id, IUserService userService) =>
-    {
-        var deleted = await userService.DeleteUserAsync(id);
-        return deleted ? Results.NoContent() : Results.NotFound();
-    })
-    .WithName("DeleteUser")
-    .WithOpenApi()
-    .WithTags("Users")
-    .Produces(204)
-    .Produces(404);
+app.UseFastEndpoints();
+app.UseUsersEndpoints();
 
 app.Run();

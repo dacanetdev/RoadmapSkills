@@ -1,115 +1,99 @@
 # RoadmapSkills
 
-A .NET 8.0 Clean Architecture project implementing a modular monolith design for managing developer roadmap skills. This application helps developers track their progress along various technology learning paths and skill development roadmaps.
+A modular monolith application for managing developer roadmaps and skills.
+
+## Architecture
+
+The application follows a modular monolith architecture with the following key components:
+
+- **Host API (`DeventSoft.RoadmapSkills.Api`)**: The main entry point of the application that:
+  - Manages Swagger configuration
+  - Handles authentication/authorization
+  - Registers all module endpoints
+  - Manages common middleware
+
+- **Modules**: Independent business modules that:
+  - Define their own domain models, services, and infrastructure
+  - Use extension methods for service and endpoint registration
+  - Maintain clean separation of concerns
+  - Current modules:
+    - Users: Handles user management and authentication
 
 ## Project Structure
 
-The solution follows Clean Architecture principles with a modular monolith approach:
-
 ```
 src/
+├── Host/
+│   └── DeventSoft.RoadmapSkills.Api/      # Main application host
 ├── Modules/
-│   └── Users/
-│       ├── DeventSoft.RoadmapSkills.Users.Domain
-│       ├── DeventSoft.RoadmapSkills.Users.Application
-│       ├── DeventSoft.RoadmapSkills.Users.Infrastructure
-│       └── DeventSoft.RoadmapSkills.Users.Infrastructure.Abstractions
-└── Shared/
-    ├── DeventSoft.RoadmapSkills.Shared.Domain
-    └── DeventSoft.RoadmapSkills.Shared.Infrastructure
+│   └── Users/                             # Users module
+│       ├── DeventSoft.RoadmapSkills.Users.Api/
+│       ├── DeventSoft.RoadmapSkills.Users.Application/
+│       ├── DeventSoft.RoadmapSkills.Users.Domain/
+│       ├── DeventSoft.RoadmapSkills.Users.Infrastructure/
+│       └── DeventSoft.RoadmapSkills.Users.Infrastructure.Abstractions/
+└── Shared/                                # Shared components
+    └── DeventSoft.RoadmapSkills.Shared.Infrastructure/
 
 tests/
-└── Modules/
-    └── Users/
-        ├── DeventSoft.RoadmapSkills.Users.UnitTests
-        └── DeventSoft.RoadmapSkills.Users.IntegrationTests
+├── Modules/
+│   └── Users/                             # Users module tests
+│       ├── DeventSoft.RoadmapSkills.Users.Api.Tests/
+│       ├── DeventSoft.RoadmapSkills.Users.Application.Tests/
+│       └── DeventSoft.RoadmapSkills.Users.Infrastructure.Tests/
+└── Shared/                                # Shared component tests
+    └── DeventSoft.RoadmapSkills.Shared.Infrastructure.Tests/
 ```
 
-## Latest Changes
+## Technologies
 
-### Users Module Implementation (2024-03-21)
-- Implemented User entity and repository
-- Added UserService with CRUD operations
-- Created unit tests for UserService with 100% coverage
-- Added test coverage configuration using coverlet
-- All tests passing successfully
-
-## Test Coverage
-
-Latest test run results:
-- Total Tests: 8
-- Passed: 8
-- Failed: 0
-- Skipped: 0
-- Duration: 2.0s
-
-## Prerequisites
-
-- .NET 8.0 SDK or later
-- Visual Studio 2022 or VS Code
-- SQL Server (LocalDB or higher) for development
+- .NET 8.0 (LTS)
+- FastEndpoints
+- Entity Framework Core
+- xUnit
+- NSubstitute
+- Radzen (Blazor UI)
 
 ## Getting Started
 
 1. Clone the repository
-```bash
-git clone https://github.com/dacanetdev/RoadmapSkills.git
-```
-
 2. Navigate to the project directory
-```bash
-cd RoadmapSkills
-```
+3. Run `dotnet restore`
+4. Run `dotnet build`
+5. Run `dotnet run --project src/DeventSoft.RoadmapSkills.Api`
 
-3. Build the solution
-```bash
-dotnet build
-```
+The API will be available at:
+- HTTP: http://localhost:5000
+- HTTPS: https://localhost:5001
 
-4. Run the tests
+Swagger UI is available at the root URL.
+
+## Development
+
+### Adding a New Module
+
+1. Create a new directory under `src/Modules/`
+2. Follow the standard module structure:
+   - `.Domain`: Contains domain models and interfaces
+   - `.Application`: Contains application services and DTOs
+   - `.Infrastructure`: Contains implementations and data access
+   - `.Infrastructure.Abstractions`: Contains interfaces for infrastructure services
+3. Create corresponding test projects under `tests/Modules/`
+4. Register the module in the Host API using extension methods
+
+### Running Tests
+
 ```bash
 dotnet test
 ```
 
-5. Run the API project
+To generate a coverage report:
+
 ```bash
-cd src/DeventSoft.RoadmapSkills.Api
-dotnet run
+dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura
+dotnet reportgenerator -reports:"**/coverage.cobertura.xml" -targetdir:coveragereport -reporttypes:Html
 ```
-
-## Features
-
-- Track progress on different technology roadmaps
-- Set learning goals and milestones
-- Record completed skills and certifications
-- Generate progress reports
-- Share progress with mentors or team leads
-
-## Architecture
-
-This project follows Clean Architecture principles:
-
-- Domain Layer: Contains enterprise logic and types
-- Application Layer: Contains business logic and interfaces
-- Infrastructure Layer: Contains implementation details and external concerns
-- API Layer: Contains API controllers and models
-
-## Technologies Used
-
-- .NET 8.0 (LTS)
-- Entity Framework Core
-- xUnit for testing
-- NSubstitute for mocking
-- Coverlet for code coverage
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
