@@ -1,9 +1,9 @@
 using FastEndpoints;
-using FastEndpoints.Swagger;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using DeventSoft.RoadmapSkills.Users.Infrastructure;
+using DeventSoft.RoadmapSkills.Users.Api.Extensions;
 
 namespace DeventSoft.RoadmapSkills.Users.Api;
 
@@ -35,6 +35,8 @@ public class Program
         // Add authorization
         builder.Services.AddAuthorization();
 
+        builder.Services.AddUsersModule();
+
         var app = builder.Build();
 
         // Configure the HTTP request pipeline.
@@ -50,6 +52,14 @@ public class Program
         app.UseFastEndpoints(c => {
             c.Endpoints.RoutePrefix = "api";
         });
+
+        app.UseUsersModule();
+
+        if (!app.Environment.IsDevelopment())
+        {
+            app.UseExceptionHandler("/error");
+            app.UseHsts();
+        }
 
         app.Run();
     }
